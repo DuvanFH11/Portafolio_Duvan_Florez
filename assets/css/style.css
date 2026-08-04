@@ -1,79 +1,95 @@
 /* GENERALES */
-html{
-    --main-color:rgb(153, 153, 153);
+html {
+    --main-color: rgb(153, 153, 153);
     --second-color: #ffffff;
+    /* font-size: clamp(0.875rem, 1rem + 0.5vw, 1.25rem); */
 }
-body{
+
+body {
     margin: 0px;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color:black;
+    background-color: black;
     color: var(--main-color);
+    font-size: 16px;
 }
-header{
+
+header {
     text-align: center;
 }
-main{
+
+main {
     flex: 1;
     box-sizing: content-box;
-    padding:10px;
+    padding: 10px;
 }
-footer{
+
+footer {
     background-color: gray;
-    text-align:center;
+    text-align: center;
     color: #010900;
     box-sizing: content-box;
-    padding:10px;
+    padding: 10px;
 }
-ul{
+
+ul {
     text-decoration: none;
     list-style-type: none;
-    display:flex;
-    flex-direction:row;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    padding:0;
+    padding: 0;
 }
-p{
+
+p {
     margin-top: 2px;
     margin-bottom: 2px;
 }
-hr{
+
+hr {
     width: 100%;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.contactos{
-    color:  #010900;
+
+.contactos {
+    color: #010900;
 }
-.certificados{
+
+.certificados {
     color: var(--main-color);
 }
-.titulos{
-    text-align:center;
+
+.titulos {
+    text-align: center;
     color: var(--second-color);
     margin-bottom: 30px;
 }
-.subtitulos1{
+
+.subtitulos1 {
     color: var(--second-color);
     text-align: center;
     margin: 0px;
 }
-.subtitulos2{
+
+.subtitulos2 {
     color: var(--second-color);
     text-align: left;
-    margin:0px;
+    margin: 0px;
 }
-.seccion{
-    display:flex;
+
+.seccion {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 30px;
 }
 
-.item{
-    flex:1;
+.item {
+    flex: 1;
     width: 50%;
     text-align: left;
     font-size: 1.5rem;
@@ -81,34 +97,45 @@ a{
     box-sizing: content-box;
     padding: 30px;
 }
-#foto.item{
-    text-align:center
+
+#foto.item {
+    text-align: center
 }
-.icons{
-    transition : all 200ms;
+
+.icons {
+    transition: all 200ms;
 }
-.iconsFooter{
+
+.iconsFooter {
     transition: all 300ms;
 }
-.icons:hover{
+
+.icons:hover {
     width: 22px;
     height: 22px;
     color: #ffffff;
 }
-.iconsFooter:hover{
+
+.iconsFooter:hover {
     color: #545454
 }
 
 
-@media(max-width:1024px){
-    .seccion{
-        flex-direction:column;
+@media(max-width:1024px) {
+    .seccion {
+        flex-direction: column;
         align-items: center;
     }
-    .item{
-        text-align:center;
+
+    .item {
+        text-align: center;
     }
-    ul{
+
+    ul {
         flex-direction: column;
+    }
+
+    html {
+        font-size: 10px;
     }
 }
